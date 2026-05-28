@@ -1,0 +1,12 @@
+-- select * from employee; 
+-- select emp_name, birthday, sal from employee;
+-- select emp_name as ]‹Æˆõ–¼, birthday as ¶”NŒ“ú, sal as ‹‹—^, sal*12 as ”Nû from employee;
+-- select emp_name as ]‹Æˆõ–¼, birthday as ¶”NŒ“ú, sal as ‹‹—^, cast(sal*12  as int)as ”Nû from employee;
+-- select emp_name as ]‹Æˆõ–¼, birthday as ¶”NŒ“ú, sal as ‹‹—^, (sal*12) ::int as ”Nû from employee;
+-- select emp_name as ]‹Æˆõ–¼, birthday as ¶”NŒ“ú, sal as ‹‹—^, (sal*12)::int as ”Nû, (sal*12*40)::int as ¶ŠU”Nû40”N from employee;
+-- select '’S“–Ò ' ||emp_name|| ' ‚Ì’a¶“ú‚Í ' ||birthday|| ' ‚Å‚·B' as ’a¶“ú from employee;
+-- select emp_name, to_char(birthday, 'Day, Month dd, yyyy') from employee;
+-- select emp_name, to_char(sal, '9G999G999D99') from employee;
+-- select emp_name, birthday, sal, comm, sal+coalesce(comm,0) from employee;
+\pset null '¹Şİ¼¶²µ°¶Ş';
+select emp_name, birthday, sal, comm, sal+comm from employee;
